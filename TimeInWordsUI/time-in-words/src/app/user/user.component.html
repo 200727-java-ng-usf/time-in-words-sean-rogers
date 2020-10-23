@@ -1,0 +1,17 @@
+<div class="container">
+
+    <button (click)="getAllEvents()">Get All Events</button><br>
+  
+    <table *ngIf="events" class="table table-dark">
+        <th>ID</th><th>TIME</th><th>EVENT</th>
+        <tr *ngFor="let event of events"><td>{{ event.entity_id }}</td><td>{{ event.time }}</td><td>{{ event.event }}</td></tr>
+    </table>
+
+    Input Hour <input type="text" [(ngModel)]="inputHour"/><br>
+    Input Minute <input type="text" [(ngModel)]="inputMinute"/><br>
+
+    <button (click)="addEvent()">Add Event</button>
+
+    <button (click)="logButtonFunction()">Log</button>
+    
+  </div>
