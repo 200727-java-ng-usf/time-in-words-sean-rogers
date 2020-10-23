@@ -1,0 +1,18 @@
+server:
+  port: 5000
+
+spring:
+  datasource:
+    url:
+    driver-class-name: org.postgresql.Driver
+    username:
+    password:
+  #  h2:
+  #    console:
+  #      enabled: true
+  #      path: /h2-console
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQL95Dialect
+    show-sql: true
+    hibernate:
+      ddl-auto: create-drop

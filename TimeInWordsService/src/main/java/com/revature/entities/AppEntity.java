@@ -11,18 +11,18 @@ import javax.persistence.*;
 @Data
 
 @Entity
-@Table(name="app_entity")
+@Table(name="app_entities")
 public class AppEntity {
 
     @Id
-    @Column(name="app_id")
+    @Column(name="entity_id")
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private long userId;
+    private long entity_Id;
 
-    @Column(name = "app_time")
+    @Column(name = "entity_time")
     private String time;
 
-    @Column(name = "app_event")
+    @Column(name = "entity_event")
     private String event;
 
 }
