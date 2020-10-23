@@ -32,7 +32,7 @@ public class AppController {
 
     }
 
-    @PostMapping(consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.TEXT_PLAIN_VALUE)
+    @PostMapping(value = "timetowords", consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.TEXT_PLAIN_VALUE)
     public String getTime(@RequestBody TimeDTO timeDTO) {
 
         return appService.getStringTimeFormat(timeDTO);
